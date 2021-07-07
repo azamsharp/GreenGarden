@@ -8,17 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		8DE76DC626953F13003872B1 /* GreenGardenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE76DC526953F13003872B1 /* GreenGardenApp.swift */; };
-		8DE76DC826953F13003872B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE76DC726953F13003872B1 /* ContentView.swift */; };
 		8DE76DCA26953F14003872B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE76DC926953F14003872B1 /* Assets.xcassets */; };
 		8DE76DCD26953F14003872B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE76DCC26953F14003872B1 /* Preview Assets.xcassets */; };
+		8DE76DD926954113003872B1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE76DD826954113003872B1 /* Constants.swift */; };
+		8DE76DDB2695415E003872B1 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE76DDA2695415E003872B1 /* Webservice.swift */; };
+		8DE76DDD26954188003872B1 /* Vegetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE76DDC26954188003872B1 /* Vegetable.swift */; };
+		8DE76DE0269542B3003872B1 /* VegetableListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE76DDF269542B3003872B1 /* VegetableListViewModel.swift */; };
+		8DE76DE2269543E0003872B1 /* VegetableListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE76DE1269543E0003872B1 /* VegetableListScreen.swift */; };
+		8DE76DE52695449C003872B1 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE76DE42695449C003872B1 /* View+Extensions.swift */; };
+		8DE76DE72695463D003872B1 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE76DE62695463D003872B1 /* MainScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8DE76DC226953F13003872B1 /* GreenGarden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenGarden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE76DC526953F13003872B1 /* GreenGardenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenGardenApp.swift; sourceTree = "<group>"; };
-		8DE76DC726953F13003872B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8DE76DC926953F14003872B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DE76DCC26953F14003872B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8DE76DD826954113003872B1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8DE76DDA2695415E003872B1 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		8DE76DDC26954188003872B1 /* Vegetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vegetable.swift; sourceTree = "<group>"; };
+		8DE76DDE26954282003872B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8DE76DDF269542B3003872B1 /* VegetableListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableListViewModel.swift; sourceTree = "<group>"; };
+		8DE76DE1269543E0003872B1 /* VegetableListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableListScreen.swift; sourceTree = "<group>"; };
+		8DE76DE42695449C003872B1 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		8DE76DE62695463D003872B1 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +64,14 @@
 		8DE76DC426953F13003872B1 /* GreenGarden */ = {
 			isa = PBXGroup;
 			children = (
+				8DE76DE32695448A003872B1 /* Extensions */,
+				8DE76DDE26954282003872B1 /* Info.plist */,
+				8DE76DD726954105003872B1 /* Utils */,
+				8DE76DD6269540EE003872B1 /* View Models */,
+				8DE76DD5269540E9003872B1 /* Models */,
+				8DE76DD4269540E1003872B1 /* Services */,
+				8DE76DD3269540DB003872B1 /* Screens */,
 				8DE76DC526953F13003872B1 /* GreenGardenApp.swift */,
-				8DE76DC726953F13003872B1 /* ContentView.swift */,
 				8DE76DC926953F14003872B1 /* Assets.xcassets */,
 				8DE76DCB26953F14003872B1 /* Preview Content */,
 			);
@@ -65,6 +84,55 @@
 				8DE76DCC26953F14003872B1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8DE76DD3269540DB003872B1 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8DE76DE1269543E0003872B1 /* VegetableListScreen.swift */,
+				8DE76DE62695463D003872B1 /* MainScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		8DE76DD4269540E1003872B1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8DE76DDA2695415E003872B1 /* Webservice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8DE76DD5269540E9003872B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8DE76DDC26954188003872B1 /* Vegetable.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8DE76DD6269540EE003872B1 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				8DE76DDF269542B3003872B1 /* VegetableListViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		8DE76DD726954105003872B1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8DE76DD826954113003872B1 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8DE76DE32695448A003872B1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8DE76DE42695449C003872B1 /* View+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +205,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DE76DC826953F13003872B1 /* ContentView.swift in Sources */,
+				8DE76DE72695463D003872B1 /* MainScreen.swift in Sources */,
 				8DE76DC626953F13003872B1 /* GreenGardenApp.swift in Sources */,
+				8DE76DE2269543E0003872B1 /* VegetableListScreen.swift in Sources */,
+				8DE76DE0269542B3003872B1 /* VegetableListViewModel.swift in Sources */,
+				8DE76DE52695449C003872B1 /* View+Extensions.swift in Sources */,
+				8DE76DDD26954188003872B1 /* Vegetable.swift in Sources */,
+				8DE76DDB2695415E003872B1 /* Webservice.swift in Sources */,
+				8DE76DD926954113003872B1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,12 +346,16 @@
 				DEVELOPMENT_TEAM = B2Q8EGNCQA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GreenGarden/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = GreenGarden;
+				INFOPLIST_KEY_CFBundleName = GreenGarden;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +380,16 @@
 				DEVELOPMENT_TEAM = B2Q8EGNCQA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GreenGarden/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = GreenGarden;
+				INFOPLIST_KEY_CFBundleName = GreenGarden;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
