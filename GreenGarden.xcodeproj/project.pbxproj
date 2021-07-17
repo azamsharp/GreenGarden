@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8DD65D0926A3788B008D2D7E /* VegetableDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD65D0826A3788B008D2D7E /* VegetableDetailScreen.swift */; };
+		8DD65D0C26A37B7F008D2D7E /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD65D0B26A37B7F008D2D7E /* AboutUs.swift */; };
+		8DD65D0E26A37C7A008D2D7E /* TwoColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD65D0D26A37C7A008D2D7E /* TwoColumnView.swift */; };
+		8DD65D1026A37CE3008D2D7E /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD65D0F26A37CE3008D2D7E /* DescriptionView.swift */; };
 		8DE76DC626953F13003872B1 /* GreenGardenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE76DC526953F13003872B1 /* GreenGardenApp.swift */; };
 		8DE76DCA26953F14003872B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE76DC926953F14003872B1 /* Assets.xcassets */; };
 		8DE76DCD26953F14003872B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE76DCC26953F14003872B1 /* Preview Assets.xcassets */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8DD65D0826A3788B008D2D7E /* VegetableDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableDetailScreen.swift; sourceTree = "<group>"; };
+		8DD65D0B26A37B7F008D2D7E /* AboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
+		8DD65D0D26A37C7A008D2D7E /* TwoColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnView.swift; sourceTree = "<group>"; };
+		8DD65D0F26A37CE3008D2D7E /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
 		8DE76DC226953F13003872B1 /* GreenGarden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenGarden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE76DC526953F13003872B1 /* GreenGardenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenGardenApp.swift; sourceTree = "<group>"; };
 		8DE76DC926953F14003872B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +53,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8DD65D0A26A37B6F008D2D7E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8DD65D0B26A37B7F008D2D7E /* AboutUs.swift */,
+				8DD65D0D26A37C7A008D2D7E /* TwoColumnView.swift */,
+				8DD65D0F26A37CE3008D2D7E /* DescriptionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		8DE76DB926953F13003872B1 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +82,7 @@
 		8DE76DC426953F13003872B1 /* GreenGarden */ = {
 			isa = PBXGroup;
 			children = (
+				8DD65D0A26A37B6F008D2D7E /* Views */,
 				8DE76DE32695448A003872B1 /* Extensions */,
 				8DE76DDE26954282003872B1 /* Info.plist */,
 				8DE76DD726954105003872B1 /* Utils */,
@@ -91,6 +110,7 @@
 			children = (
 				8DE76DE1269543E0003872B1 /* VegetableListScreen.swift */,
 				8DE76DE62695463D003872B1 /* MainScreen.swift */,
+				8DD65D0826A3788B008D2D7E /* VegetableDetailScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -208,11 +228,15 @@
 				8DE76DE72695463D003872B1 /* MainScreen.swift in Sources */,
 				8DE76DC626953F13003872B1 /* GreenGardenApp.swift in Sources */,
 				8DE76DE2269543E0003872B1 /* VegetableListScreen.swift in Sources */,
+				8DD65D1026A37CE3008D2D7E /* DescriptionView.swift in Sources */,
 				8DE76DE0269542B3003872B1 /* VegetableListViewModel.swift in Sources */,
 				8DE76DE52695449C003872B1 /* View+Extensions.swift in Sources */,
 				8DE76DDD26954188003872B1 /* Vegetable.swift in Sources */,
 				8DE76DDB2695415E003872B1 /* Webservice.swift in Sources */,
+				8DD65D0E26A37C7A008D2D7E /* TwoColumnView.swift in Sources */,
+				8DD65D0C26A37B7F008D2D7E /* AboutUs.swift in Sources */,
 				8DE76DD926954113003872B1 /* Constants.swift in Sources */,
+				8DD65D0926A3788B008D2D7E /* VegetableDetailScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

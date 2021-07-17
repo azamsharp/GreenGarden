@@ -15,9 +15,14 @@ struct VegetableListScreen: View {
         VStack {
             List {
                 ForEach(vegetableListVM.vegetables, id: \.id) { vegetable in
-                    VegetableCell(vegetable: vegetable)
-                        .background(Constants.Colors.lightGreyRowColor)
-                        .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
+                    
+                    NavigationLink(destination: VegetableDetailScreen(vegetable: vegetable)) {
+                       
+                        VegetableCell(vegetable: vegetable)
+                            .background(Constants.Colors.lightGreyRowColor)
+                            .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
+                    }
+                    
                 }.listRowSeparator(.hidden)
             }
             .listStyle(.plain)
@@ -31,6 +36,8 @@ struct VegetableListScreen: View {
 struct VegetableListScreen_Previews: PreviewProvider {
     static var previews: some View {
         VegetableListScreen()
+            .navigationTitle("Green Garden")
+            .embedInNavigationView()
     }
 }
 
