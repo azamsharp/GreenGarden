@@ -26,6 +26,7 @@ struct VegetableListScreen: View {
                 }.listRowSeparator(.hidden)
             }
             .listStyle(.plain)
+            .navigationTitle("Green Garden")
             .task {
                 await vegetableListVM.getAll()
             }
