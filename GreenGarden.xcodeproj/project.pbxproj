@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D77DFB326B8EC64008A7E28 /* GreenGardenModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D77DFB126B8EC64008A7E28 /* GreenGardenModel.xcdatamodeld */; };
+		8D77DFB626B8EDF0008A7E28 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77DFB526B8EDF0008A7E28 /* CoreDataManager.swift */; };
 		8DD65D0926A3788B008D2D7E /* VegetableDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD65D0826A3788B008D2D7E /* VegetableDetailScreen.swift */; };
 		8DD65D0C26A37B7F008D2D7E /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD65D0B26A37B7F008D2D7E /* AboutUs.swift */; };
 		8DD65D0E26A37C7A008D2D7E /* TwoColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD65D0D26A37C7A008D2D7E /* TwoColumnView.swift */; };
@@ -16,7 +18,7 @@
 		8DE76DCD26953F14003872B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE76DCC26953F14003872B1 /* Preview Assets.xcassets */; };
 		8DE76DD926954113003872B1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE76DD826954113003872B1 /* Constants.swift */; };
 		8DE76DDB2695415E003872B1 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE76DDA2695415E003872B1 /* Webservice.swift */; };
-		8DE76DDD26954188003872B1 /* Vegetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE76DDC26954188003872B1 /* Vegetable.swift */; };
+		8DE76DDD26954188003872B1 /* VegetableDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE76DDC26954188003872B1 /* VegetableDTO.swift */; };
 		8DE76DE0269542B3003872B1 /* VegetableListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE76DDF269542B3003872B1 /* VegetableListViewModel.swift */; };
 		8DE76DE2269543E0003872B1 /* VegetableListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE76DE1269543E0003872B1 /* VegetableListScreen.swift */; };
 		8DE76DE52695449C003872B1 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE76DE42695449C003872B1 /* View+Extensions.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D77DFB226B8EC64008A7E28 /* GreenGardenModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GreenGardenModel.xcdatamodel; sourceTree = "<group>"; };
+		8D77DFB526B8EDF0008A7E28 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		8DD65D0826A3788B008D2D7E /* VegetableDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableDetailScreen.swift; sourceTree = "<group>"; };
 		8DD65D0B26A37B7F008D2D7E /* AboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
 		8DD65D0D26A37C7A008D2D7E /* TwoColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnView.swift; sourceTree = "<group>"; };
@@ -34,7 +38,7 @@
 		8DE76DCC26953F14003872B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8DE76DD826954113003872B1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8DE76DDA2695415E003872B1 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
-		8DE76DDC26954188003872B1 /* Vegetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vegetable.swift; sourceTree = "<group>"; };
+		8DE76DDC26954188003872B1 /* VegetableDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableDTO.swift; sourceTree = "<group>"; };
 		8DE76DDE26954282003872B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8DE76DDF269542B3003872B1 /* VegetableListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableListViewModel.swift; sourceTree = "<group>"; };
 		8DE76DE1269543E0003872B1 /* VegetableListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableListScreen.swift; sourceTree = "<group>"; };
@@ -53,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D77DFB426B8EDE1008A7E28 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8D77DFB526B8EDF0008A7E28 /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		8DD65D0A26A37B6F008D2D7E /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,17 +94,19 @@
 		8DE76DC426953F13003872B1 /* GreenGarden */ = {
 			isa = PBXGroup;
 			children = (
+				8D77DFB426B8EDE1008A7E28 /* Managers */,
 				8DD65D0A26A37B6F008D2D7E /* Views */,
 				8DE76DE32695448A003872B1 /* Extensions */,
 				8DE76DDE26954282003872B1 /* Info.plist */,
 				8DE76DD726954105003872B1 /* Utils */,
 				8DE76DD6269540EE003872B1 /* View Models */,
-				8DE76DD5269540E9003872B1 /* Models */,
+				8DE76DD5269540E9003872B1 /* DTOs */,
 				8DE76DD4269540E1003872B1 /* Services */,
 				8DE76DD3269540DB003872B1 /* Screens */,
 				8DE76DC526953F13003872B1 /* GreenGardenApp.swift */,
 				8DE76DC926953F14003872B1 /* Assets.xcassets */,
 				8DE76DCB26953F14003872B1 /* Preview Content */,
+				8D77DFB126B8EC64008A7E28 /* GreenGardenModel.xcdatamodeld */,
 			);
 			path = GreenGarden;
 			sourceTree = "<group>";
@@ -123,12 +137,12 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		8DE76DD5269540E9003872B1 /* Models */ = {
+		8DE76DD5269540E9003872B1 /* DTOs */ = {
 			isa = PBXGroup;
 			children = (
-				8DE76DDC26954188003872B1 /* Vegetable.swift */,
+				8DE76DDC26954188003872B1 /* VegetableDTO.swift */,
 			);
-			path = Models;
+			path = DTOs;
 			sourceTree = "<group>";
 		};
 		8DE76DD6269540EE003872B1 /* View Models */ = {
@@ -230,12 +244,14 @@
 				8DE76DE2269543E0003872B1 /* VegetableListScreen.swift in Sources */,
 				8DD65D1026A37CE3008D2D7E /* DescriptionView.swift in Sources */,
 				8DE76DE0269542B3003872B1 /* VegetableListViewModel.swift in Sources */,
+				8D77DFB326B8EC64008A7E28 /* GreenGardenModel.xcdatamodeld in Sources */,
 				8DE76DE52695449C003872B1 /* View+Extensions.swift in Sources */,
-				8DE76DDD26954188003872B1 /* Vegetable.swift in Sources */,
+				8DE76DDD26954188003872B1 /* VegetableDTO.swift in Sources */,
 				8DE76DDB2695415E003872B1 /* Webservice.swift in Sources */,
 				8DD65D0E26A37C7A008D2D7E /* TwoColumnView.swift in Sources */,
 				8DD65D0C26A37B7F008D2D7E /* AboutUs.swift in Sources */,
 				8DE76DD926954113003872B1 /* Constants.swift in Sources */,
+				8D77DFB626B8EDF0008A7E28 /* CoreDataManager.swift in Sources */,
 				8DD65D0926A3788B008D2D7E /* VegetableDetailScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +465,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8D77DFB126B8EC64008A7E28 /* GreenGardenModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8D77DFB226B8EC64008A7E28 /* GreenGardenModel.xcdatamodel */,
+			);
+			currentVersion = 8D77DFB226B8EC64008A7E28 /* GreenGardenModel.xcdatamodel */;
+			path = GreenGardenModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8DE76DBA26953F13003872B1 /* Project object */;
 }
