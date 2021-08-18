@@ -11,10 +11,19 @@ import SwiftUI
 struct GreenGardenApp: App {
     
     init() {
-        
-        let _ = CoreDataManager.shared
-        
         setupTheme()
+        
+        Task { [self] in 
+            await self.importData()
+        }
+    }
+    
+    private func importData() async {
+        do {
+            try await CoreDataManager.shared.importData()
+        } catch {
+            print(error)
+        }
     }
     
     private func setupTheme() {
